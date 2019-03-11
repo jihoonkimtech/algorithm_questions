@@ -1,6 +1,6 @@
-/* º» ÇÁ·ÎÁ§Æ®´Â(°ÔÀÓÀº) 2019³â 03¿ù 10ÀÏ, Á÷Á¢ KimJH-Hanul(Github)°¡ Á¦ÀÛÇÑ ÇÁ·ÎÁ§Æ®ÀÔ´Ï´Ù.
-   º» ÇÁ·ÎÁ§Æ®ÀÇ ´ëÇÑ ¼³¸íÀº ±êÇãºê UPnDOWN.cpp°¡ ÀÖ´Â Æú´õ ³»ÀÇ 
-   What is this Project?(KR).md¸¦ Âü°íÇØÁÖ¼¼¿ä.*/ 
+/* ë³¸ í”„ë¡œì íŠ¸ëŠ”(ê²Œì„ì€) 2019ë…„ 03ì›” 10ì¼, ì§ì ‘ KimJH-Hanul(Github)ê°€ ì œì‘í•œ í”„ë¡œì íŠ¸ì…ë‹ˆë‹¤.
+   ë³¸ í”„ë¡œì íŠ¸ì˜ ëŒ€í•œ ì„¤ëª…ì€ ê¹ƒí—ˆë¸Œ UPnDOWN.cppê°€ ìˆëŠ” í´ë” ë‚´ì˜ 
+   What is this Project?(KR).mdë¥¼ ì°¸ê³ í•´ì£¼ì„¸ìš”.*/ 
 
 #include <stdio.h>
 #include <windows.h>//Sleep()
@@ -11,14 +11,14 @@ int main(){
 	
 	char Pname[] = "";
 	
-	printf("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤\n"); 
+	printf("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”\n"); 
 	printf("     U P  &  D O W N  G A M E !     \n\n");
 	printf("        made by KimJH-Hanul         \n");
-	printf("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥\n\n\n");
+	printf("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜\n\n\n");
 	Sleep(2000);
 	
 	printf("First, What your name? (Please type your name.)\nMy name is : ");
-	scanf("%s", &Pname);//ÀÌ¸§ ÀÔ·Â  
+	scanf("%s", &Pname);//ì´ë¦„ ì…ë ¥  
 	Sleep(2000);
 	
 	printf("\n\nHello! %s, let's play the game!",Pname);
@@ -26,8 +26,8 @@ int main(){
 	
 	printf("\n\nI will randomly choose a number from 1 to 10...\n\n");
 	int ranNum = 0;
-	srand((unsigned)time(NULL));//Áßº¹ ³­¼ö ¹æÁö¸¦ À§ÇØ ½Ã°£ °ªÀ¸·Î ³­¼ö Ãâ·Â 
-	ranNum = rand()% 10 + 1; //³­¼ö »ı¼º (¹üÀ§´Â 0+1 ~ (10-1)+1) 
+	srand((unsigned)time(NULL));//ì¤‘ë³µ ë‚œìˆ˜ ë°©ì§€ë¥¼ ìœ„í•´ ì‹œê°„ ê°’ìœ¼ë¡œ ë‚œìˆ˜ ì¶œë ¥ 
+	ranNum = rand()% 10 + 1; //ë‚œìˆ˜ ìƒì„± (ë²”ìœ„ëŠ” 0+1 ~ (10-1)+1) 
 	//printf("%d", ranNum);
 	Sleep(3000);
 	
@@ -39,28 +39,28 @@ int main(){
 	
 	printf("\n\nHow many chance you want? (1-5)\n");
 	printf("I want.. : ");
-	int chance = 0;//±âÈ¸ º¯¼ö ÃÊ±âÈ­ 
-	scanf("%d", &chance);//¿øÇÏ´Â ±âÈ¸ ¼ö ÀÔ·Â 
+	int chance = 0;//ê¸°íšŒ ë³€ìˆ˜ ì´ˆê¸°í™” 
+	scanf("%d", &chance);//ì›í•˜ëŠ” ê¸°íšŒ ìˆ˜ ì…ë ¥ 
 	while(1){
-		if(chance <= 5 && chance > 0){//»ç¿ëÀÚ°¡ ÀÔ·ÂÇÑ ±âÈ¸ ¼ö°¡ 1~5ÀÎÁö ÆÇº° 
+		if(chance <= 5 && chance > 0){//ì‚¬ìš©ìê°€ ì…ë ¥í•œ ê¸°íšŒ ìˆ˜ê°€ 1~5ì¸ì§€ íŒë³„ 
 			printf("\nOk!\n"); 
-			break;//¸ÂÀ» ½Ã ¹İº¹¹® Å»Ãâ ÈÄ °è¼Ó ÁøÇà 
+			break;//ë§ì„ ì‹œ ë°˜ë³µë¬¸ íƒˆì¶œ í›„ ê³„ì† ì§„í–‰ 
 		}
 		printf("\nI want.. : ");
-		scanf("%d", &chance);//¾Æ´Ò ½Ã ´Ù½Ã ÀÔ·Â 
+		scanf("%d", &chance);//ì•„ë‹ ì‹œ ë‹¤ì‹œ ì…ë ¥ 
 	}
 	
 	bool right = 0;
 	while(1){
 		if(chance == 0){
 			printf("\nYou Failed..\n");
-			right = 0;//Á¤´ä false 
+			right = 0;//ì •ë‹µ false 
 			break;
 		}
 		printf("\nNow, answer the right answer!!\n");
 		printf("right anser is..(chance : %d) : ",chance);
-		int answer = 0;//Á¤´ä º¯¼ö ÃÊ±âÈ­ 
-		scanf("%d", &answer);//Á¤´ä ÀÔ·Â
+		int answer = 0;//ì •ë‹µ ë³€ìˆ˜ ì´ˆê¸°í™” 
+		scanf("%d", &answer);//ì •ë‹µ ì…ë ¥
 		if(answer > ranNum){
 			printf("\nDOWN!!\n");
 			chance--;
@@ -71,20 +71,20 @@ int main(){
 		}
 		if(answer == ranNum){
 			printf("\nWow.. you are right!\n");
-			right = 1;//Á¤´ä true 
+			right = 1;//ì •ë‹µ true 
 			break;
 		}
 	}
 	
-	if(right == 1){ //Á¤´ä ºĞº° 
-			printf("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤\n");
-			printf("  You Win! :)\n");
-			printf("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥\n");
+	if(right == 1){ //ì •ë‹µ ë¶„ë³„ 
+			printf("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”\n");
+			printf("  You Win! :)  \n");
+			printf("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜\n");
 		}
 	else if(right == 0){
-			printf("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤\n");
-			printf("  You Lose..:(\n");
-			printf("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥\n");
+			printf("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”\n");
+			printf("  You Lose..:(  \n");
+			printf("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜\n");
 		}
 	return 0;
 }
