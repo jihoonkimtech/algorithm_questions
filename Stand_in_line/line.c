@@ -3,7 +3,7 @@
 #define FALSE -1
 #define TRUE 1
 
-int isSame(int* arr, int start, int end){	//Áßº¹ °Ë»ç 
+int isSame(int* arr, int start, int end){	//ì¤‘ë³µ ê²€ì‚¬ 
 	int a;
 	for(a = start; a <= end; a++){
 		int b;
@@ -29,32 +29,32 @@ int main(){
 	
 	int num;
 	for(num = 1; num <= student; num++){
-		cards[num] = num; //¼ø¼­´ë·Î Áö±ŞµÇ¾ú´Ù´Â ÇÏ¿¡ Ä«µå Áö±Ş 
+		cards[num] = num; //ìˆœì„œëŒ€ë¡œ ì§€ê¸‰ë˜ì—ˆë‹¤ëŠ” í•˜ì— ì¹´ë“œ ì§€ê¸‰ 
 	}
 	
 	for(pr = 0; pr < pairs; pr++){
 		scanf("%d %d", &arrays[pr][0], &arrays[pr][1]);
-		//(X, Y)¿¡¼­ ¼ø¼­´Â µ¿°á, X > Y°¡ µÇ¾î¾ß ÇÔ, ¼øÈ¯ÇÏ¸ç °è¼Ó ºñ±³ 
-		cards[arrays[pr][0]]++; //X°¡ ´õ Ä¿¾ßÇÏ´Â ¼ö 
-		cards[arrays[pr][1]]--; //Y°¡ ´õ ÀÛ¾Æ¾ßÇÏ´Â ¼ö 
+		//(X, Y)ì—ì„œ ìˆœì„œëŠ” ë™ê²°, X > Yê°€ ë˜ì–´ì•¼ í•¨, ìˆœí™˜í•˜ë©° ê³„ì† ë¹„êµ 
+		cards[arrays[pr][0]]++; //Xê°€ ë” ì»¤ì•¼í•˜ëŠ” ìˆ˜ 
+		cards[arrays[pr][1]]--; //Yê°€ ë” ì‘ì•„ì•¼í•˜ëŠ” ìˆ˜ 
 	}	
 	
 	int stack = 0;
 	for(stack = 1; stack <= student; stack++){
-		//¼ø¼­ Ä«µå´Â 1¿¡¼­ ÃÖ´ë ÇĞ»ı¼ö ±îÁö Áö±ŞµÊ. 
-		if( (cards[stack] <= 0 || cards[stack] > student) || isSame(cards, 1, student) == TRUE ){ //¼ø¼­ Ä«µå ¹üÀ§¸¦ ¹ş¾î³­ °æ¿ì , Áßº¹ Ä«µå°¡ ÀÖ´Â °æ¿ì 
-			printf("\n-1\n"); //ºÒ°¡ÇÑ ¹è¿­ 
+		//ìˆœì„œ ì¹´ë“œëŠ” 1ì—ì„œ ìµœëŒ€ í•™ìƒìˆ˜ ê¹Œì§€ ì§€ê¸‰ë¨. 
+		if( (cards[stack] <= 0 || cards[stack] > student) || isSame(cards, 1, student) == TRUE ){ //ìˆœì„œ ì¹´ë“œ ë²”ìœ„ë¥¼ ë²—ì–´ë‚œ ê²½ìš° , ì¤‘ë³µ ì¹´ë“œê°€ ìˆëŠ” ê²½ìš° 
+			printf("\n-1\n"); //ë¶ˆê°€í•œ ë°°ì—´ 
 			return -1; 
 		} else {
-			isPossible = TRUE; //°¡´É 
+			isPossible = TRUE; //ê°€ëŠ¥ 
 		}
 	}
 
- 	if(isPossible == TRUE){ //°¡´ÉÇÑ °æ¿ì 
+ 	if(isPossible == TRUE){ //ê°€ëŠ¥í•œ ê²½ìš° 
 		int c;
 		printf("\n");
 		for(c = 1; c <= student; c++){
-			printf("%d ", cards[c]); //¼ø¼­ Ãâ·Â 
+			printf("%d ", cards[c]); //ìˆœì„œ ì¶œë ¥ 
 		}
 		printf("\n");
 		return 1; 
