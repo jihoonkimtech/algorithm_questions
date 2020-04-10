@@ -57,6 +57,7 @@ int main(){
 			printf("%d ", cards[c]); //순서 출력 
 		}
 		printf("\n");
+		system("pause");
 		return 1; 
 	}
 }

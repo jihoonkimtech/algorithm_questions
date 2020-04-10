@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(){
@@ -27,6 +28,7 @@ int main(){
 		return 0;
 	} else {
 		printf("1\n"); //학생 수가 0이면 
+		system("pause");
 		return 1; //가능하므로 1 출력  
 	}
 }

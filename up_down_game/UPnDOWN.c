@@ -50,7 +50,7 @@ int main(){
 		scanf("%d", &chance);//아닐 시 다시 입력 
 	}
 	
-	bool right = 0;
+	int right = 0;
 	while(1){
 		if(chance == 0){
 			printf("\nYou Failed..\n");
@@ -86,5 +86,6 @@ int main(){
 			printf("  You Lose..:(  \n");
 			printf("└──────────────┘\n");
 		}
+	system("pause");
 	return 0;
 }

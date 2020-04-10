@@ -1,6 +1,7 @@
 /*
  *	라이브러리 헤더 선언 
  */ 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main()
@@ -10,8 +11,8 @@ int main()
 	 */ 
 	int maxStudent = 0, maxSubject = 0; //학생 수와 과목 수 
 	int stacks; 
-	int table[100][100] = {};	//점수를 저장할 전체 배열 
-	int grs[maxSubject][2] = {}; //과목별 점수의 범위를 저장할 배열 
+	int table[100][100];	//점수를 저장할 전체 배열 
+	int grs[5][2]; //과목별 점수의 범위를 저장할 배열 
 	
 	FILE* tableFile; //파일 자료형 변수 선언 
 	
@@ -78,6 +79,7 @@ int main()
 		if(stacks == 5) //모든 조건에 부합한다면 
 			printf("%d번 ",i); //해당 학생의 번호를 출력 
 	}
+	system("pause");
 	printf(" 학생 입니다. ");
 	
 }
