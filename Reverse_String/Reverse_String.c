@@ -1,24 +1,21 @@
 #include <stdio.h>
+
 int main() {
-	char input[100];
-	scanf("%s",input);
-	
-	int str = 0;
-	int rev = -1;
-	
-	while(rev <= 100){
-		if(input[++rev] == NULL)
-			break;
+	char input[100], tmp;
+	int count = 0, i = 0;
+
+	scanf("%s", input);
+
+	while (input[i++]>0)
+		count++;
+
+	for (i = 0; i < count/2; i++) {
+		tmp = input[i];
+		input[i] = input[count-i-1];
+		input[count - i - 1] = tmp;
 	}
-	
-	char reverse[100];
-	int length = rev;
-	while(str < length){
-		reverse[str++] = input[(rev--)-1];
-	}
-	
-	printf("%s\n\n", reverse);
-	
+
+	printf("%s", input);
 	system("pause");
 	return 0;
 }
